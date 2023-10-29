@@ -59,7 +59,7 @@ export const useCart = () => {
         navigate("/cart");
       } else if (action === "dqty") {
         let res = await axios.post(
-          "https://mp3backend.onrender.com/cart/qty",
+          "https://mp3backend.onrender.com/user/cart/qty",
           {
             albumId: id,
             method: "decrement",
